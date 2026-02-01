@@ -1,0 +1,160 @@
+.skillBox {
+    background: #092b6edd;
+    padding: 128px 222px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 128px;
+    width: 100%;
+}
+
+h1.h1 {
+    color: #FFF;
+    text-align: center;
+    padding-bottom: 128px;
+}
+
+.innerBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: "code toolbox more";
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.skillList:nth-child(1) {
+    grid-area: code;
+}
+
+.skillList:nth-child(2) {
+    grid-area: toolbox;
+}
+
+.skillList:nth-child(3) {
+    grid-area: more;
+}
+
+.headerCode {
+    background-color: #652635e4;
+    color: #FFFFFF;
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.headerToolbox {
+    background-color: #4e7d5a;
+    color: #FFFFFF;
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.headerUpcoming {
+    background-color: #3d86ce;
+    color: #FFFFFF;
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.headerMore {
+    background-color: #efd96c;
+    color: #092b6edd;
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.skillList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.commonP {
+    color: #FFF;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 30px;
+}
+
+
+@media screen and (min-width: 744px) {
+    .skillBox {
+        height: auto;
+        top: 260px;
+        left: 186px;
+        gap: 64px
+    }
+
+    .innerBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .h1.h1 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 68px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .headerCode,
+    .headerUpcoming,
+    .headerMore,
+    .headerToolbox {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .skillBox {
+        padding: 128px 20px;
+    }
+
+    .skillBox .h1.h1 {
+        text-align: left;
+        padding: 0px 20px 65px 40px;
+    }
+
+    .innerBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "code toolbox"
+            "more more";
+        gap: 24px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .skillList:nth-child(1) {
+        grid-area: code;
+    }
+
+    .skillList:nth-child(2) {
+        grid-area: toolbox;
+    }
+
+    .skillList:nth-child(3) {
+        grid-area: more;
+    }
+
+    .headerCode,
+    .headerToolbox,
+    .headerUpcoming,
+    .headerMore {
+        text-align: left;
+        max-width: 100%;
+    }
+}

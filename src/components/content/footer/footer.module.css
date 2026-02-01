@@ -1,0 +1,68 @@
+.footerBand {
+    height: 114px;
+    background: #8e697c;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.socialMedia {
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+}
+
+.githubIcon {
+    width: 55px;
+    transition: opacity 0.2s ease;
+}
+
+.githubLink:hover .githubIcon {
+    content: url("/images/githubHover.png");
+}
+
+
+/*
+.ticker {
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+    animation: tickerMove 4s linear infinite;
+}
+
+.ticker span {
+    padding-right: 2rem;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+@keyframes tickerMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-25%);
+    }
+}*/
+
+@media screen and (min-width: 744px) {
+    .footerBand {
+        height: 100px;
+    }
+
+    .ticker span {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .ticker span {
+        font-size: 17.5px;
+    }
+}

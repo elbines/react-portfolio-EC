@@ -1,0 +1,85 @@
+.techBox {
+
+    background: #092b6edd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "header techText";
+    padding: 400px 230px;
+    z-index: 0;
+}
+
+.h1 {
+    grid-area: header;
+    font-weight: 700;
+    font-size: 56px;
+    z-index: 1;
+    color: #FFF;
+    line-height: 68.26px;
+    display: flex;
+    justify-content: center;
+    /* horisontalt */
+    align-items: center;
+    /* vertikalt */
+    text-align: center;
+}
+
+.h2 {
+    grid-area: techText;
+    color: #FFF;
+    font-family: Hind;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38.42px;
+    width: 543px;
+}
+
+@media (max-width: 1024px) {
+    .techBox {
+        padding: 200px 0px;
+    }
+
+    .h1 {
+        padding-left: 00px;
+        justify-content: right;
+        text-align: right;
+        align-items: right;
+        max-width: 300px;
+    }
+
+    .h2 {
+        font-size: 18px;
+        padding: 0 170px 0 50px;
+        justify-content: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .techBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "header"
+            "techText";
+        padding: 128px 16px 128px 16px;
+    }
+
+    .h1 {
+        grid-area: header;
+        font-weight: 700;
+        font-size: 56px;
+        z-index: 1;
+        color: #FFF;
+        line-height: 68.26px;
+        padding-bottom: 36px
+    }
+
+    .h2 {
+        font-size: 22px;
+        padding: 0;
+        width: 343px;
+        justify-self: center;
+    }
+
+}

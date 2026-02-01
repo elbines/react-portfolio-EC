@@ -1,0 +1,270 @@
+.outer_containerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 120px 0;
+}
+
+.wrapper_projects {
+    width: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    margin: 0 auto;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+}
+
+h1.projectsHeader {
+    color: #092b6edd;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 65px;
+}
+
+.displayName {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    color: #092b6edd;
+    text-align: right;
+    font-style: normal;
+    line-height: normal;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1;
+}
+
+.projectImage {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-bottom: 10px solid #092b6edd;
+    border-left: 10px solid #092b6edd;
+    background: lightgray 50% / cover no-repeat;
+}
+
+
+.text {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 500px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px 0;
+}
+
+.skillsList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.skillsList li {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 2px 6px;
+    background: #000;
+}
+
+
+.iconContainer {
+    display: inline-flex;
+    align-items: flex-start;
+    margin-top: auto;
+    gap: 32px;
+    margin-top: 10px;
+}
+
+
+.iconContainer a {
+    width: 100%;
+    height: 56px;
+}
+
+.iconContainer img,
+.iconContainer svg {
+    height: 45px;
+    width: auto;
+}
+
+@media (max-width: 900px) {
+    .wrapper_projects {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+}
+
+@media (max-width: 820px) {
+
+    /* Wrapper */
+    .wrapper_projects {
+        width: 90%;
+    }
+
+    /* Project-layout */
+    .projectContainer {
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+
+    /* IMG */
+    .projectImage {
+        width: 220px;
+        height: 220px;
+        flex-shrink: 0;
+    }
+
+    .displayName {
+        font-size: 24px;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    /* Tekst */
+    .textContainer {
+        width: auto;
+        max-width: 350px;
+        gap: 12px;
+    }
+
+    .text {
+        max-width: 100%;
+        margin: 12px 0;
+    }
+
+
+
+    /* BTN container */
+    .iconContainer {
+        display: flex;
+        gap: 2px;
+        margin-top: 1px;
+    }
+
+    /* BTN */
+    .iconContainer a {
+        width: 170px;
+        height: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ICONS */
+    .iconContainer img,
+    .iconContainer svg {
+        height: 38px;
+        width: auto;
+        display: block;
+    }
+
+    @media (max-width: 600px) {
+
+        .wrapper_projects {
+            width: 100%;
+            padding: 0 16px;
+            gap: 77px;
+        }
+
+        .projectContainer {
+            padding: 17px;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        h1.projectsHeader {
+            margin-top: 70px;
+            padding-top: 27px;
+            font-size: 63px;
+        }
+
+        .displayName {
+            font-size: 28px;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        /* IMG */
+        .projectImage {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-left: none;
+            border-bottom: 8px solid #092b6edd;
+        }
+
+        /* TEKST */
+        .textContainer {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .text {
+            width: 100%;
+            font-size: 16px;
+        }
+
+        /* TAGS */
+        .skillsList {
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skillsList li {
+
+            font-size: 13px;
+
+        }
+
+        /* BTN */
+        .iconContainer {
+            margin-top: 1px;
+            gap: 16px;
+            justify-content: center;
+            align-self: center;
+
+
+        }
+
+        .iconContainer a {
+            width: 100%;
+            height: 56px;
+        }
+
+        .iconContainer img,
+        .iconContainer svg {
+            height: 35px;
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.myWordsBox {
+    background: #FFECEA;
+    width: 1280px;
+    height: 2024px;
+    flex-shrink: 0;
+}
+
+h1.h1 {
+    color: #8e697c;
+}
+
+.myWordsInner1,
+.myWordsInner2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 98px;
+}
+
+.Article1,
+.Article2,
+.Article3,
+.Article4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.commonP {
+    color: #000;
+    font-family: Hind;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

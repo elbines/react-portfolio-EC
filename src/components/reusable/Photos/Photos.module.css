@@ -1,0 +1,10 @@
+.photoContainer {}
+
+.me {
+    max-height: 150px;
+    max-width: 150px;
+    transform: scaleX(-1);
+    filter: grayscale(40%) brightness(0.9) contrast(90%)opacity(95%);
+    ;
+
+}

@@ -1,0 +1,75 @@
+.techBox {
+    background: #092b6edd;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header"
+        "techText";
+    padding: 128px 16px 128px 16px;
+    z-index: 0;
+}
+
+.h1 {
+    grid-area: header;
+    font-weight: 700;
+    font-size: 56px;
+    z-index: 1;
+    color: #FFF;
+    line-height: 68.26px;
+    padding-bottom: 36px
+}
+
+.h2 {
+    grid-area: techText;
+    color: #FFF;
+    font-family: Hind;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38.42px;
+    width: 343px;
+}
+
+@media (min-width: 744px) {
+    .techBox {
+        padding: 256px 303px 256px 64px;
+        text-align: center;
+    }
+
+    .h2 {
+        width: 616px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .techBox {
+        background: #092b6edd;
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header techText techText";
+        padding: 362px 230px 362px 230px;
+        z-index: 0;
+    }
+
+    .h1 {
+        padding-right: 50px;
+        align-self: center;
+        justify-self: center;
+        padding-bottom: 0;
+        line-height: 97.52px;
+        font-size: 80px;
+    }
+
+    .h2 {
+        width: 600px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1285px) {
+    .techBox {
+        padding: 362px 346px 362px 346px;
+    }
+}
